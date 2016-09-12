@@ -189,7 +189,7 @@ describe("errors", function(){
       poly.render("coffee/invalid.coffee", function(error, body){
         should.not.exist(body)
         should.exist(error)
-        error.should.have.property('source', "CoffeeScript")
+        error.should.have.property('source', "coffee")
         error.should.have.property('dest', "JavaScript")
         error.should.have.property('lineno', 3)
         error.should.have.property('filename')
